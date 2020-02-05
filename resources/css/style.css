@@ -1,0 +1,324 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.color-naoyuki{
+  background-color: #5D0000;
+  color: white;
+}
+.color-naoyuki:hover{
+  background-color: rgba(93,0,0,1.2);
+  color: rgba(255,255,255,0.7);
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+/*LOGIN*/
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  background-color: #fff;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: black;
+
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: black;
+
+}
+
+.sidebar .nav-link.active {
+  color: white;
+  background-color: #5D0000;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 133px; /* Space for fixed navbar */
+}
+
+@media (min-width: 768px) {
+  [role="main"] {
+    padding-top: 48px; /* Space for fixed navbar */
+  }
+}
+
+/*TARGETMARKET*/
+.modal-header{
+  border-bottom:0;
+}
+.modal-footer{
+  border-top:0;
+}
+.btn-tm{
+  width: 100px;
+}
+/*potential market*/
+.active-icon{
+  color: green;
+}
+
+.deactive-icon{
+  color: red;
+}
+
+
+/*
+ * Navbar
+ */
+
+#notificationsMenu{
+
+}
+
+.dropdown-menu-right {
+right: 0;
+left: auto;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.navbar-light .navbar-brand{
+  /*background-color: grey;*/
+  color: black;
+}
+
+#notifications.has-notifications {
+  color: #bf5329
+}
+
+.navbar-light .navbar-brand:hover{
+  color: #00221E;
+}
+
+
+
+/* LOGIN */
+
+
+.overlay-bg{
+  background-color: rgba(117,31,34,0.7);
+  height: 100vh;
+}
+
+.card-login{
+  background-color: transparent;
+  color: white;
+  border: 0;
+  /*margin-top: 20vh;*/
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-weight: bold;
+}
+
+#footer-general{
+  bottom: 0;
+  color: #5D0000;
+  font-weight: bold;
+  /*position: relative;*/
+  right: 0;
+  left: 0;
+}
+
+.nav-forgot{
+  text-decoration: underline;
+}
+
+
+#hr-login{
+  border: 1px solid #5D0000;
+  width: 250px;
+}
+
+.form-login{
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.form-login:focus{
+  box-shadow: none;
+}
+
+.btn-login{
+  /*background-color: #5D0000;*/
+  color: white;
+  border-radius: 10px;
+}
+}
+
+/* END OF LOGIN */
+
+
+/* DASHBOARD */
+
+main{
+  background: #F5F5F5;
+  min-height: 100vh;
+}
+
+.modal-detail-duration{
+  border: 2px solid #5D0000;
+} 
+
+.font-card{
+  font-size: 12px !important;
+}
+
+.card-dashboard{
+    height: 140px;
+}
+.btn-check{
+  background-color: #0C3A4B;
+  color: white;
+  border-radius: 0;
+  border: 0;
+}
+.btn-save{
+  background-color: #0C3A4B;
+  color: white;
+  border-radius: 0;
+  border: 0;
+}
+.img-icon,.img-icon:after{
+  width: 15px;
+  height: 15px;
+  color: white !important;
+}
+
+
+#vertical-border-detail2{
+  border: 1px solid #707070;
+  position: absolute;
+  width: 32vh;
+  right: 156px;
+  top: 200px;
+  z-index: 0;
+  transform: rotate(90deg);
+}
+
+.tt-menu {
+  width: inherit ;
+}
+/* END OF DASHBOARD */
+
+
+/*MS*/
+.card-title{
+  font-size: 16px !important;
+  }
+
+/*TARGET MARKET*/
+.fontpercent{
+  color: #C85656;
+  font-size: 20px;
+}
+.color-address{
+  background: #C85656;
+  color: white;
+}
+.color-address:hover{
+  background: #C85656;
+  color: rgba(255,255,255,0.8);
+}
+.border-address{
+  color: #C85656;
+}
+.border-hr{
+  border: 1px solid #5D0000;
+}
+.btn-distribution{
+  background-color: #8A1F4D;
+}
+.btn-brand-activation{
+  background-color: #973F7F;
+}
+.btn-marketing-communication{
+  background-color: #550CC2;
+}
+.btn-selling-optimation{
+  background-color: #148FFB;
+}
+.funneling{
+  background-color: #FEEFEF;
+}
+
+
+
+.overlay-bg-red{
+  background-color: rgba(200,86,86,0.7);
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: #5d0000;
+    border-radius: 0;
+}
+
+.hr-edit{
+  border: 0.5px solid grey;
+}
